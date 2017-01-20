@@ -13,7 +13,7 @@ function ajax(opt){
     };
     //参数解析 ： 请求类型  请求地址  是否异步  请求体  响应数据格式   函数
     for(var attr in opt){
-        // 判断是否是
+        // 判断是否是opt的私有属性
         if(opt.hasOwnProperty(attr)){
             def[attr]=opt[attr];
         }
